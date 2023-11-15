@@ -1,6 +1,6 @@
 # Blog Application
 
-Welcome to the Blog Application built with React.js! This application allows users to create, publish, and interact with blogs, including features such as user authentication, multimedia content in blogs.
+Welcome to the Blog Application built with React.js! This application allows users to create, publish, and interact with blogs, including features such as user authentication, and multimedia content in blogs.
 
 - **Live Demo:** [Web Application](https://superlative-stroopwafel-c72c6c.netlify.app/)
 
@@ -50,5 +50,3 @@ Welcome to the Blog Application built with React.js! This application allows use
 
 Explore the live demo and review the code on [GitHub](https://github.com/bhargavi35/blog-MEREN). If you have any questions or feedback, feel free to reach out.
 
-# Backend Deployment: [Cyclic Link](https://cute-ruby-hose.cyclic.app/)
-# Frontend Deployment: [Netlify Link](https://superlative-stroopwafel-c72c6c.netlify.app/)
