@@ -3,7 +3,7 @@ import "./Post.css";
 import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
-  const PF = "http://localhost:8576/images/";
+  const PF = "https://cute-ruby-hose.cyclic.app/images/";
 
   return (
     <div className="post">

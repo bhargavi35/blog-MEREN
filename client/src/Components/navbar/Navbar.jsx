@@ -5,7 +5,7 @@ import { Context } from "../../Context/Context";
 
 const Navbar = () => {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:8576/images/"
+  const PF = "https://cute-ruby-hose.cyclic.app/images/"
 
   const handleSubmit = () => {
     dispatch({ type: "LOGOUT" });

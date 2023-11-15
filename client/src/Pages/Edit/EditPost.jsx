@@ -29,8 +29,8 @@ const EditPost = () => {
       }
     }
     try {
-      const res = await axios.post("http://localhost:8576/posts", newPost);
-      window.location.replace("http://localhost:8576/post/" + res.data._id);
+      const res = await axios.post("hhttps://cute-ruby-hose.cyclic.app/posts", newPost);
+      window.location.replace("hhttps://cute-ruby-hose.cyclic.app/post/" + res.data._id);
     } catch (err) {
       console.log(err)
     }

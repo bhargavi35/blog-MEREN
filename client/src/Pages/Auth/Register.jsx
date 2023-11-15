@@ -13,12 +13,12 @@ const Register = () => {
     e.preventDefault(); 
     setError(false);
     try {
-      const res = await axios.post("http://localhost:8576/auth/signup", {
+      const res = await axios.post("hhttps://cute-ruby-hose.cyclic.app/auth/signup", {
         username,
         email,
         password,
       });
-      res.data && window.location.replace("http://localhost:8576/auth/login");
+      res.data && window.location.replace("hhttps://cute-ruby-hose.cyclic.app/auth/login");
     } catch (err) {
       setError(true);
     }

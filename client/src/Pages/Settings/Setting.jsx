@@ -12,7 +12,7 @@ const Setting = () => {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:8576/images/";
+  const PF = "https://cute-ruby-hose.cyclic.app/images/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,12 +30,12 @@ const Setting = () => {
       data.append("file", file);
       updatedUser.profilePic = filename;
       try {
-        await axios.post("http://localhost:8576/upload", data);
+        await axios.post("https://cute-ruby-hose.cyclic.app/upload", data);
       } catch (err) {console.log(err)}
     }
     try {
       const res = await axios.put(
-        "http://localhost:8576/users/" + user._id,
+        "https://cute-ruby-hose.cyclic.app/users/" + user._id,
         updatedUser
       );
       setSuccess(true);

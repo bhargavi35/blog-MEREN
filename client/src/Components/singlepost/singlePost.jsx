@@ -9,7 +9,7 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PF = "http://localhost:8576/images/";
+  const PF = "https://cute-ruby-hose.cyclic.app/images/";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -17,7 +17,7 @@ export default function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("http://localhost:8576/posts/" + path);
+      const res = await axios.get("https://cute-ruby-hose.cyclic.app/posts/" + path);
       setPost(res.data);
       console.log(res,"res")
       setTitle(res.data.title);
@@ -28,7 +28,7 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:8576/posts/${post._id}`, {
+      await axios.delete(`https://cute-ruby-hose.cyclic.app/posts/${post._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -37,7 +37,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:8576/posts/${post._id}`, {
+      await axios.put(`https://cute-ruby-hose.cyclic.app/posts/${post._id}`, {
         username: user.username,
         title,
         desc,
